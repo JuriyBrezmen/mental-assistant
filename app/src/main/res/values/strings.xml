@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Mental Assistant</string>
+    <string name="STR_YES">Так</string>
+    <string name="STR_UNKNOWN">Невідомо</string>
+    <string name="STR_NO">Ні</string>
+</resources>

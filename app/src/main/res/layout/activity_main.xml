@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Діагностика"></Button>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Тест Роршаха"></Button>
+
+        <Button
+            android:id="@+id/buttonExit"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Вихід"></Button>
+
+    </LinearLayout>
+</RelativeLayout>
