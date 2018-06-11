@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import brezmen.yurii.mentalassistant.R;
+import brezmen.yurii.mentalassistant.ui.rorschachtest.RorschachTestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         buttonStartTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentStartTest = new Intent(MainActivity.this, TestActivity.class);
+                Intent intentStartTest = new Intent(MainActivity.this, RorschachTestActivity.class);
                 startActivity(intentStartTest);
             }
         });

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txt_animal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Тварини:"/>
+
+        <TextView
+            android:id="@+id/txt_human"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Люди:"/>
+
+        <TextView
+            android:id="@+id/txt_fantastic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Фантастичні істоти:"/>
+
+        <TextView
+            android:id="@+id/txt_things"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Нежива природа:"/>
+
+        <TextView
+            android:id="@+id/txt_motion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Рух:"/>
+
+        <TextView
+            android:id="@+id/txt_general_or_partly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Форма:"/>
+
+        <TextView
+            android:id="@+id/txt_neither_color_nor_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Нечітка форма:"/>
+
+        <TextView
+            android:id="@+id/txt_clear_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Чітка форма:"/>
+
+        <TextView
+            android:id="@+id/txt_vivid_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/colorPrimaryText"
+            tools:text="Колір:"/>
+    </LinearLayout>
+</ScrollView>
