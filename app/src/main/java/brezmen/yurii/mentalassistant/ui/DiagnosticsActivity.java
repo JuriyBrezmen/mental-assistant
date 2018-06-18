@@ -1,5 +1,6 @@
 package brezmen.yurii.mentalassistant.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -83,6 +84,7 @@ public class DiagnosticsActivity extends AppCompatActivity {
     }
 
     private void checkResults() {
+        Intent intentMainActivity = new Intent(DiagnosticsActivity.this, MainActivity.class);
         if (disorderList.size() == 0) {
             //disorder not found
             Toast.makeText(this, "disorder not found", Toast.LENGTH_SHORT).show();
@@ -90,39 +92,38 @@ public class DiagnosticsActivity extends AppCompatActivity {
         } else {
             currentQuestion++;
             if (currentQuestion < symptomList.size()) {
-               askQuestion();
-            }
-            else {
+                askQuestion();
+            } else {
                 for (Disorder disorder : disorderList) {
                     if (selectedSymptom.containsAll(disorder.getSymptomIdList())) {
-                        Toast.makeText(this, disorder.getName(), Toast.LENGTH_SHORT).show();
-                        // на всі питання відповіли "так", значить це точно ця хвороба
-                        // вивести десь в текств'ю disorder.getName();
+                        Toast.makeText(this, "Діагноз втановлено:\n" + disorder.getName(), Toast.LENGTH_SHORT).show();
+                        startActivity(intentMainActivity);
+
                     } else {
-                        Toast.makeText(this, "МАБУТЬ" + disorder.getName(), Toast.LENGTH_SHORT).show();
-                        // деякі симптоми збігаються, а на деякі відповіли "невідомо"
-                        // значить вивести десь в ттекств'ю, що це припущення disorder.getName();
+                        Toast.makeText(this, "Найбільш ймовірний діагноз:\n" + disorder.getName(), Toast.LENGTH_SHORT).show();
+                        startActivity(intentMainActivity);
                     }
                 }
             }
         }
     }
-        public void askQuestion() {
-            boolean found = false;
-            Symptom symptom = symptomList.get(currentQuestion);
-            for (Disorder disorder : disorderList) {
-                if (disorder.getSymptomIdList().contains(symptom.getId())) {
-                    found = true;
-                    break;
-                }
-            }
 
-            if (found) {
-                question.setText(symptom.getQuestion());
-            } else {
-                checkResults();
+    public void askQuestion() {
+        boolean found = false;
+        Symptom symptom = symptomList.get(currentQuestion);
+        for (Disorder disorder : disorderList) {
+            if (disorder.getSymptomIdList().contains(symptom.getId())) {
+                found = true;
+                break;
             }
-
         }
+
+        if (found) {
+            question.setText(symptom.getQuestion());
+        } else {
+            checkResults();
+        }
+
+    }
 
 }

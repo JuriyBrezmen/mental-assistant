@@ -4,6 +4,10 @@
     <string name="STR_UNKNOWN">Невідомо</string>
     <string name="STR_NO">Ні</string>
 
+    <string name="buttonRorschach">Тест Роршаха</string>
+    <string name="buttonDiagnostics">Діагностика</string>
+    <string name="buttonExit">Вихід</string>
+
     <!--Rorschach Test screen-->
     <string name="please_answer">Будь ласка, дайте відповіді на наступні запитання:</string>
     <string name="question1">1. Що ви бачите?</string>
@@ -31,13 +35,15 @@
     <string name="data_not_valid">Будь ласка, дайте відповідь на всі запитання</string>
 
     <!--Rorschach Test Result screen-->
-    <string name="animal">Люди:</string>
-    <string name="human">Люди:</string>
 
     <string name="animal_normal">Вашими сильними сторонами є взаємопорозуміння та кооперація в області мислення.</string>
     <string name="animal_bad">Ви страждаєте стереотипністю, бідністю інтересів.</string>
 
     <string name="human_normal">В вас відсутні конфлікти зі сприйняттям самого себе.</string>
     <string name="human_bad">У вас можливі конфлікти з самим собою, своїм тілом та іншими людьми, наприклад, в сфері сексуальних відносиню</string>
+
+    <string name="motion_normal"> </string>
+    <string name="motion_bad"> </string>
+
 
 </resources>

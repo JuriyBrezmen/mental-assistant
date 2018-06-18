@@ -11,22 +11,23 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/buttonStart"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Діагностика"></Button>
+                android:id="@+id/button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonRorschach"/>
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Тест Роршаха"></Button>
+                android:id="@+id/buttonStart"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonDiagnostics"/>
+
 
         <Button
-            android:id="@+id/buttonExit"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:text="Вихід"></Button>
+                android:id="@+id/buttonExit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonExit"/>
 
     </LinearLayout>
 </RelativeLayout>

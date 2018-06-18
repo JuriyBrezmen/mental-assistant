@@ -69,6 +69,19 @@ public class RorschachResultActivity extends Activity {
         }
 
 
+        if (humanAnswers > 3) {
+            txtHuman.setText(getString(R.string.human_normal));
+        } else {
+            txtHuman.setText(getString(R.string.human_bad));
+        }
+
+        if (animalAnswers <= 4) {
+            txtAnimal.setText(getString(R.string.animal_normal));
+        } else {
+            txtAnimal.setText(getString(R.string.animal_bad));
+        }
+
+
     }
 
     private void initView() {

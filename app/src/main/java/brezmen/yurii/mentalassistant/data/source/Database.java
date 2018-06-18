@@ -360,7 +360,7 @@ public class Database {
 
         symptomList.add(createSymptom(JEALOUSY,
                 "Ревнощі",
-                "Чи буває у хворого приступ необгрунтованих ревнощів?",
+                "Чи відчуває хворий відчуття ревнощів?",
                 "")
         );
 
